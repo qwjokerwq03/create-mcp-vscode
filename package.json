@@ -2,7 +2,7 @@
   "name": "create-mcp-vscode",
   "displayName": "Create MCP",
   "description": "Right-click any folder or enter a URL to automatically discover APIs and generate a fully compliant custom Python MCP server.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "qwjokerwq03",
   "repository": {
     "type": "git",
