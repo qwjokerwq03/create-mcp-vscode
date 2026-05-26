@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/qwjokerwq03/create-mcp-vscode.git"
   },
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.80.0"
   },
