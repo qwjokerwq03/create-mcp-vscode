@@ -4,6 +4,10 @@
   "description": "Right-click any folder or enter a URL to automatically discover APIs and generate a fully compliant custom Python MCP server.",
   "version": "1.0.0",
   "publisher": "qwjokerwq03",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwjokerwq03/create-mcp-vscode.git"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -12,6 +16,7 @@
     "Programming Languages"
   ],
   "activationEvents": [],
+  "license": "MIT",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
