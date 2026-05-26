@@ -1,0 +1,47 @@
+{
+  "name": "create-mcp-vscode",
+  "displayName": "Create MCP",
+  "description": "Right-click any folder or enter a URL to automatically discover APIs and generate a fully compliant custom Python MCP server.",
+  "version": "1.0.0",
+  "publisher": "qwjokerwq03",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "create-mcp.generateFromFolder",
+        "title": "Create MCP: Generate Server from Folder"
+      },
+      {
+        "command": "create-mcp.generateFromUrl",
+        "title": "Create MCP: Generate Server from URL..."
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "create-mcp.generateFromFolder",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^16.x",
+    "typescript": "^5.1.3"
+  }
+}
